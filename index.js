@@ -67,17 +67,34 @@ document.addEventListener('DOMContentLoaded', function() {
   function showGameOver() {
     const gameOverContainer = document.createElement('div');
     gameOverContainer.classList.add('game-over-container');
+
+
+    const video = document.createElement('video');
+    video.classList.add('game-over-video');
+    video.src = 'Untitled design.mp4'; // Replace with the actual path to your video file
+    video.autoplay = true;
+    video.loop = true;
+    video.muted = true;
+
+    gameOverContainer.appendChild(video);
+    document.body.appendChild(gameOverContainer);
+  
+    const gameOverContent = document.createElement('div');
+    gameOverContent.classList.add('game-over-content');
+  
     const gameOverImage = document.createElement('img');
     gameOverImage.src = 'fontbolt-removebg-preview.png'; // Replace with the actual path to your image
     gameOverImage.alt = 'Game Over';
     gameOverImage.classList.add('game-over-image');
+  
     const playAgainButton = document.createElement('button');
     playAgainButton.textContent = 'Play Again';
     playAgainButton.classList.add('play-again-btn');
     playAgainButton.addEventListener('click', restartGame);
-    gameOverContainer.appendChild(playAgainButton);
-    gameOverContainer.appendChild(gameOverImage);
-    document.body.appendChild(gameOverContainer);
+  
+    gameOverContent.appendChild(playAgainButton);
+    gameOverContent.appendChild(gameOverImage);
+    document.body.appendChild(gameOverContent);
   }
 
   function restartGame() {
