@@ -68,8 +68,8 @@ body {
 }
 
 .game-over-image {
-  max-width: 180%;
-  max-height: 200%;
+  max-width: 70%;
+  max-height:70%;
   object-fit: contain;
   order: 1;
 }
