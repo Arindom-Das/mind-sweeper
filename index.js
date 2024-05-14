@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     video.classList.add('game-over-video');
     video.src = 'Untitled design.mp4'; // Replace with the actual path to your video file
     video.autoplay = true;
-    video.loop = true;
+    video.loop = false;
     video.muted = true;
 
     gameOverContainer.appendChild(video);
