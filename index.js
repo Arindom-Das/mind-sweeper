@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nonRowColItemsClicked++;
 
             if (nonRowColItemsClicked === 4) {
+              initConfetti();
               showWinnerMessage();
             }
           }
@@ -94,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function showWinnerMessage() {
-    initConfetti();
+    
     const winnerContainer = document.createElement('div');
     winnerContainer.classList.add('winner-container');
   
