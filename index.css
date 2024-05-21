@@ -20,7 +20,7 @@ body {
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  background-image: url(lawn-640x360.jpg);
+  background-image: url(assets/lawn-640x360.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1; /* Add a lower z-index */
@@ -175,5 +175,65 @@ body {
   100% {
       transform: translateY(100vh) rotate(720deg);
       opacity: 0;
+  }
+}
+
+/* Existing styles */
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    width: 90vw;
+    height: calc(90vw * 0.9); /* Maintain the aspect ratio */
+    transform: translate(-50%, -50%) scale(0.8); /* Scale down */
+    padding: 20px;
+  }
+
+  .game-over-container,
+  .winner-container,
+  .game-over-content {
+    width: 90vw;
+    height: calc(90vw * 0.9); /* Maintain the aspect ratio */
+    transform: translate(-50%, -50%) scale(0.8); /* Scale down */
+    padding: 20px;
+  }
+
+  .game-over-video {
+    width: 100vw;
+    height: calc(100vw * 1.07); /* Maintain the aspect ratio */
+    top: 0;
+    left: 0;
+    transform: scale(0.8); /* Scale down */
+  }
+
+  .play-again-btn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-container {
+    transform: translate(-50%, -50%) scale(1); /* Scale down further */
+    z-index: 1; /* Decrease the z-index */
+  }
+
+  .game-over-video {
+    width: 82vw;
+    height: calc(70vw * 1.07);
+    transform: translate(-50%, -50%) scale(1.51); /* Scale down further */
+    z-index: 1; 
+    top: 195px;
+    left: 213px;
+    padding: 2px;
+  }
+
+  .game-over-image {
+    max-width: 95vw;
+    max-height: 55vh;
+  }
+
+  .play-again-btn {
+    font-size: 24px;
+    padding: 0.4em 0.8em;
   }
 }
