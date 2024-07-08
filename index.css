@@ -228,8 +228,8 @@ body {
   }
 
   .game-over-image {
-    max-width: 95vw;
-    max-height: 55vh;
+    width: 80%;
+    height:80%;
   }
 
   .play-again-btn {

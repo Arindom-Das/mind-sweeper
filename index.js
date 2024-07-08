@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   let randomImageFound = false;
   let nonRowColItemsClicked = 0;
-  const flippedImage = 'Untitled_design__1_-removebg-preview__1_-removebg-preview.png';
-  const randomImage = 'image (2).png'; // Replace with the desired image URL for i3
+  const flippedImage = 'assets/Untitled_design__1_-removebg-preview__1_-removebg-preview.png';
+  const randomImage = 'assets/image (2).png'; // Replace with the desired image URL for i3
 
   function getRowAndColumn(index) {
     const row = Math.floor(index / 3);
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     gameOverContainer.classList.add('game-over-container');
     const video = document.createElement('video');
     video.classList.add('game-over-video');
-    video.src = 'Untitled design.mp4';
+    video.src = 'assets/Untitled design.mp4';
     video.autoplay = true;
     video.loop = false;
     video.muted = true;
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const gameOverContent = document.createElement('div');
     gameOverContent.classList.add('game-over-content');
     const gameOverImage = document.createElement('img');
-    gameOverImage.src = 'fontbolt-removebg-preview.png';
+    gameOverImage.src = 'assets/fontbolt-removebg-preview.png';
     gameOverImage.alt = 'Game Over';
     gameOverImage.classList.add('game-over-image');
 
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
     winnerContainer.classList.add('winner-container');
 
     const winnerImage = document.createElement('img');
-    winnerImage.src = 'the forext.png'; // Replace with the path to your winner image
+    winnerImage.src = 'assets/the forext.png'; // Replace with the path to your winner image
     winnerImage.alt = 'Winner';
     winnerImage.classList.add('winner-image');
 
