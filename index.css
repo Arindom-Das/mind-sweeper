@@ -218,18 +218,18 @@ body {
   }
 
   .game-over-video {
-    width: 82vw;
-    height: calc(70vw * 1.07);
+    width: 83vw;
+    height: calc(70vw * 1.09);
     transform: translate(-50%, -50%) scale(1.51); /* Scale down further */
     z-index: 1; 
-    top: 195px;
-    left: 213px;
+    top: 166px;
+    left: 182px;
     padding: 2px;
   }
 
   .game-over-image {
-    width: 80%;
-    height:80%;
+    width: 90%;
+    height:90%;
   }
 
   .play-again-btn {
