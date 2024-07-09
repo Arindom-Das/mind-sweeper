@@ -229,8 +229,9 @@ body {
 
   .game-over-image {
     width: 83vw;
-    height: 80vw;
-    transform: scale(2);
+    height: 70px;
+    transform: scale(1.5);
+    padding-bottom: 25px;
   }
 
   .play-again-btn {
