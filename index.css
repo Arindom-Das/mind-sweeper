@@ -229,7 +229,6 @@ body {
 
   .game-over-image {
     width: 500px;
-    height: 500px;
     transform: scale(1.5);
   }
 
