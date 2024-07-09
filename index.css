@@ -230,7 +230,7 @@ body {
   .game-over-image {
     width: 83vw;
     height: 80vw;
-    transform: scale(1.5);
+    transform: scale(2);
   }
 
   .play-again-btn {
