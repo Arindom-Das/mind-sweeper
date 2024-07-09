@@ -222,9 +222,9 @@ body {
     height: calc(70vw * 1.09);
     transform: translate(-50%, -50%) scale(1.51); /* Scale down further */
     z-index: 1; 
-    top: 166px;
-    left: 182px;
-    padding: 2px;
+    top: 180px;
+    left: 195px;
+
   }
 
   .game-over-image {
