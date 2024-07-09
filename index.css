@@ -228,8 +228,9 @@ body {
   }
 
   .game-over-image {
-    width: 90%;
-    height:90%;
+    width: 500px;
+    height: 500px;
+    transform: scale(1.5);
   }
 
   .play-again-btn {
